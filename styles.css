@@ -1,0 +1,82 @@
+*,
+*::after
+*::before
+{
+  box-sizing: border-box;
+
+}
+body,p,h3,h1{
+  margin: 0;
+
+}
+button{
+  font-family: inherit;
+}
+body{
+  min-height: 100vh;
+background-image: url('images/pattern-background-desktop.svg');
+background-repeat: repeat-x ;
+background-position: top;
+background-color: hsl(225, 100%, 94%);
+background-size: contain;
+position: relative;
+font-family: 'Red Hat Display', sans-serif;
+}
+
+.whole{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50% ,-50%);
+max-width: 450px;
+border-radius: 20px;
+overflow: hidden;
+}
+.white-box{
+
+text-align: center;
+background: hsl(225, 100%, 98%);
+padding: 3rem;
+}
+
+.plan{
+  display: flex;
+  justify-content: space-between;
+  background-color:   hsl(225, 100%, 94%);
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px;
+}
+ p{
+  color: hsl(224, 23%, 55%);
+}
+.plan-btn{
+  display: block;
+  margin: 10px auto;
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px;
+    border-radius: 10px;
+}
+.white-box .plan-text{
+  display: flex;
+  align-items: center;
+
+}
+.plan-btn:last-of-type{
+  background-color: hsl(225, 100%, 98%);
+  width: 100%;
+  border: none;
+}
+.change a:hover{
+  text-decoration: none;
+}
+@media only screen and (max-width: 425px){
+  .whole{
+    padding: 3%;
+  }
+  body{
+    background-image: url('images/pattern-background-mobile.svg');
+  }
+}
